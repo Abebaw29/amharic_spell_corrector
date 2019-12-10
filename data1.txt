@@ -1,0 +1,6 @@
+﻿from spellchecker import SpellChecker
+spell=SpellChecker()
+file=('አስገንዝቧቸው  ','doggma ','recive')
+for word in file:
+    print(f'{word}:{spell.correction(word)}')
+    print(f'{word}:{spell.candidates(word)}')
